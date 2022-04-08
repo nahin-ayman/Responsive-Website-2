@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Comforter&family=Dancing+Script&family=Dongle:wght@300&family=Fredoka:wght@500&family=Open+Sans:wght@300&family=Outfit:wght@300;400&family=Poppins:wght@300&family=Roboto:wght@300&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+    
+</head>
+<body>
+
+    <div class="container">
+
+
+
+        <div class="navbar">
+            <img src="./Playstation_Img/logo.png" class="logo" alt="Logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>
+                </nav>
+            <img src="./Playstation_Img/menu.png" class="menu-icon" ondblclick="togglemenu()" alt="Menu">
+        </div>
+
+        <div class="row">
+
+            <div class="col-1"> 
+                <div class="line"></div>  
+
+                <h2>PS4 V2<br> Dualshock 4</h2>
+                <h3>Wireless Controller for PlayStation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$32.50</h4>
+                <button type="button">Buy Now <img src="./Playstation_Img/arrow.png" alt=""> </button>
+            </div>
+
+            <div class="col-2">            
+                <img src="./Playstation_Img/controller.png" class="controller" alt="">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="./Playstation_Img/add.png" alt="">
+                    <p><small>Add to cart</small></p>
+                </div>
+            </div>
+
+        </div>
+        <div class="social-links">
+            <img src="./Playstation_Img/fb.png" alt="">
+            <img src="./Playstation_Img/tw.png" alt="">
+            <img src="./Playstation_Img/ig.png" alt="">
+         </div> 
+
+    </div>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="main-content">
+                <h1>Get 20% off your first order</h1>
+                <p>when you subscribe to our mailing list.</p>
+                <div class="footer-input">
+                    <input type="text" placeholder="EMAIL">
+                    <input type="button" class="footer-button" value="REDEEM OFFER">
+                    
+                </div>
+                <div  class="hidden-input">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" value=""><br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" value=""><br>
+                    <input style="
+                    cursor: pointer;
+                    background-color: rgb(255, 37, 73);
+                    border: none;
+                    width: 135px;
+                    font-size: 15px;
+                    margin-top: 20px;
+                    margin-left: -160px;
+                    height: 35px;" class="redeem-btn" type="submit" value="REEDEM OFFER">
+                </div>
+            </div>
+
+            <div class="sub-footer">
+                <div class="sub-footer-1">
+                    <div class="sub-1-heading">
+                        <h2>Links</h2>
+                    </div>
+                    <div class="sub-footer-1-boxes">
+                        <div class="sub-1-box-1">
+                            <p style="
+                                margin-bottom: 8px;
+                                border-bottom: 4px solid white;
+                                border-radius: 1px;">About US</p>
+                            <p>How it Works</p>                   
+                        </div>
+                        <div class="sub-1-box-2">
+                            <p style=" margin-bottom: 12px;">Our Farmers</p>
+                            <p>Blog</p>
+                        </div>
+                        <div class="sub-1-box-3">
+                            <p>FAQ</p>
+                            <p style="margin-top: 10px;">Gift</p>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="sub-footer-2">
+                    <div class="sub-2-heading">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="sub-2-text">
+                        <p>nahinayman@gmail.com</p>
+                        <p>340 West 42nd St. New York, NY 10036</p>
+                    </div>
+                </div>
+
+                <div class="sub-footer-3 ">
+                    <h3>Follow Us</h3>
+                    <div class="sub-footer-3-links">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="final-footer">
+                <div class="final-footer-text">
+                    <p>&copy; Nahin Ayman . All Rights Reserved.</p>
+                </div>
+            </div>
+    
+             
+        </div>
+
+      
+
+    </footer>
+
+
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px";
+                }
+            else 
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+        }
+
+    </script>
+    
+</body>
+</html>
+
+
